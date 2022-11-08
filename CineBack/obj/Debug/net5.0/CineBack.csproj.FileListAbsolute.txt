@@ -1,0 +1,24 @@
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\CineBack.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\CineBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\CineBack.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\bin\Debug\net5.0\CineBack.deps.json
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\bin\Debug\net5.0\CineBack.dll
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\bin\Debug\net5.0\ref\CineBack.dll
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\bin\Debug\net5.0\CineBack.pdb
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\CineBack.dll
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\ref\CineBack.dll
+C:\Users\usuario\Desktop\Escritorio\TUP-2022\PROGRAMACION II\TPI\CineCordoba\CineBack\obj\Debug\net5.0\CineBack.pdb
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\bin\Debug\net5.0\CineBack.deps.json
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\bin\Debug\net5.0\CineBack.dll
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\bin\Debug\net5.0\CineBack.pdb
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\CineBack.csproj.AssemblyReference.cache
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\CineBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfoInputs.cache
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfo.cs
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\CineBack.csproj.CoreCompileInputs.cache
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\CineBack.dll
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\refint\CineBack.dll
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\CineBack.pdb
+C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineBack\obj\Debug\net5.0\ref\CineBack.dll
