@@ -1,11 +1,10 @@
-﻿using System;
+﻿using CineBack.soporte;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.IO;
+using System.Net;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,13 +12,29 @@ namespace CineFront
 {
     public partial class frmPeliculas : Form
     {
+        string url = "https://localhost:44301/peliculas";
+
         public frmPeliculas()
         {
             InitializeComponent();
+
         }
 
-        
-        
+        private async void frmPeliculas_Load(object sender, EventArgs e)
+        {
+            string respuesta = await GetHttp();
+            List<Pelicula> lst = JsonConvert.DeserializeObject<List<Pelicula>>(respuesta);
+            dataGridView1.DataSource = lst;
+        }
+
+        public async Task<string> GetHttp()
+        {
+            WebRequest oRequest = WebRequest.Create(url);
+            WebResponse oResponse = oRequest.GetResponse();
+            StreamReader sr = new StreamReader(oResponse.GetResponseStream());
+            return await sr.ReadToEndAsync();
+        }
+
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -65,6 +80,17 @@ namespace CineFront
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmAgregarPelicula agregarPelicula = new frmAgregarPelicula();
+            agregarPelicula.ShowDialog();
         }
     }
 }

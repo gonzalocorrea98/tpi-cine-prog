@@ -145,3 +145,28 @@ END
 
 INSERT INTO PELICULAS(id_clasificacion, id_idioma, id_director, nombre_pelicula, fecha_estreno)
     VALUES (1, 1, 1, 'PRUEBA1', '07/07/1985');
+
+
+
+--CONSULTAR DIRECTORES
+CREATE PROC SP_CONSULTAR_DIRECTORES
+AS
+BEGIN
+SELECT id_director,nombre FROM DIRECTORES
+END
+
+
+--CONSULTAR IDIOMAS
+CREATE PROC SP_CONSULTAR_IDIOMAS
+AS
+BEGIN
+SELECT id_idioma, idioma + ' | ' + subtitulos as idioma FROM IDIOMAS
+END
+
+
+--CONSULTAR CLASIFICACION
+CREATE PROC SP_CONSULTAR_CLASIFICACIONES
+AS
+BEGIN
+SELECT id_clasificacion, clasificacion from CLASIFICACIONES
+end

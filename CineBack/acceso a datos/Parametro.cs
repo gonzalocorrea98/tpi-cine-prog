@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineBack.acceso_a_datos
 {
-    class Parametro
+    public class Parametro
     {
         public string Clave { get; set; }
         public object Valor { get; set; }

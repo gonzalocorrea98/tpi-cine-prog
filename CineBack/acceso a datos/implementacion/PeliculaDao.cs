@@ -51,7 +51,6 @@ namespace CineBack.acceso_a_datos.implementacion
             SqlCommand cmd = new SqlCommand();
             try
             {
-
                 cnn.Open();
                 t = cnn.BeginTransaction();
                 cmd.Connection = cnn;
@@ -63,7 +62,6 @@ namespace CineBack.acceso_a_datos.implementacion
                 cmd.Parameters.AddWithValue("@idDirector", oPelicula.IdDirector);
                 cmd.Parameters.AddWithValue("@nombrePelicula", oPelicula.NombrePelicula);
                 cmd.Parameters.AddWithValue("@fechaEstreno", oPelicula.FechaEstreno);
-
 
                 //parámetro de salida:
 
@@ -78,11 +76,8 @@ namespace CineBack.acceso_a_datos.implementacion
                  
                 */
 
-
-
                 t.Commit();
             }
-
             catch (Exception)
             {
                 if (t != null)

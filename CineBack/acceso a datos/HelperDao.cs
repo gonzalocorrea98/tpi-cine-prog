@@ -9,14 +9,14 @@ using System.Data.SqlClient;
 
 namespace CineBack.acceso_a_datos
 {
-    class HelperDao
+    public class HelperDao
     {
         private static HelperDao instancia;
         private SqlConnection cnn;
 
         private HelperDao()
         {
-            cnn = new SqlConnection(@"Data Source=DESKTOP-47S0GDS;Initial Catalog=CINE_CORDOBA_PROG;Integrated Security=True");
+            cnn = new SqlConnection(@"Data Source=GONZALOJC\SQLEXPRESS;Initial Catalog=CINE_CORDOBA_PROG;Integrated Security=True");
         }
 
         public static HelperDao ObtenerInstancia()
