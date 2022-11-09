@@ -24,7 +24,7 @@ namespace CineFront
         {
             string respuesta = await GetHttp();
             List<Pelicula> lst = JsonConvert.DeserializeObject<List<Pelicula>>(respuesta);
-            dataGridView1.DataSource = lst;
+            dgvPeliculas.DataSource = lst;
         }
 
         public async Task<string> GetHttp()
@@ -87,10 +87,14 @@ namespace CineFront
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        
+
+        private void button3_Click(object sender, EventArgs e)
         {
             frmAgregarPelicula agregarPelicula = new frmAgregarPelicula();
             agregarPelicula.ShowDialog();
         }
+
+        
     }
 }

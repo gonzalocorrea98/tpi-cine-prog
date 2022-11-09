@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CineFront
 {
-    public partial class frmTransaccion : Form
+    public partial class frmEntradas : Form
     {
-        public frmTransaccion()
+        public frmEntradas()
         {
             InitializeComponent();
         }
@@ -61,6 +61,12 @@ namespace CineFront
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAgregarEntrada agregarEntrada = new frmAgregarEntrada();
+            agregarEntrada.ShowDialog();
         }
     }
 }

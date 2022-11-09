@@ -64,7 +64,7 @@ namespace CineFront
         private void ventaDeEntradasToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            frmTransaccion transaccion = new frmTransaccion();
+            frmEntradas transaccion = new frmEntradas();
             transaccion.Show();
             this.Close();
         }
