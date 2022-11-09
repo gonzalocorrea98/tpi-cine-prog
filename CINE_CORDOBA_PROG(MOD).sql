@@ -495,502 +495,6 @@ INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente, precio, fecha_entrad
 INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente, precio, fecha_entrada) VALUES (3,3,38, 400, '01/08/2022') 
 INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente, precio, fecha_entrada) VALUES (2,4,37, 500, '01/08/2022') 
 INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente, precio, fecha_entrada) VALUES (1,5,36, 250, '01/08/2022') 
-/*
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,6,35,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,7,34,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,7,33,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,6,32,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,5,31,'02/08/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,3,30,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (35,4,29,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (42,2,28,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (31,1,27,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (15,2,26,'03/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (64,3,25,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,4,24,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (34,5,23,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (26,3,22,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (15,2,21,'04/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,1,20,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,2,19,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,3,18,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,17,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,7,16,'05/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (13,7,15,'06/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (23,6,14,'06/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (33,5,13,'06/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (46,4,12,'06/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (55,6,11,'06/08/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (49,7,10,'07/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (38,7,9,'07/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (27,3,8,'07/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (36,2,7,'07/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (25,2,6,'07/08/2022')     
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,3,5,'08/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,2,4,'08/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,5,3,'08/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,6,2,'08/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,4,1,'08/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (16,3,38,'09/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (24,2,32,'09/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (33,1,34,'09/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (42,4,21,'09/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (41,5,22,'09/08/2022')
-
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,2,39,'10/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,1,37,'10/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,23,'10/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,4,17,'10/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,5,16,'10/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (10,3,18,'11/08/2022')    
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (11,3,33,'11/08/2022')    
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (12,2,21,'11/08/2022')    
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (13,1,11,'11/08/2022')    
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (14,3,40,'11/08/2022')    
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (15,5,31,'12/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (16,3,38,'12/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (17,2,1,'12/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (18,1,2,'12/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (19,1,3,'12/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (20,3,4,'12/08/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (21,4,4,'13/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (22,5,26,'13/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (23,2,40,'13/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (24,2,40,'13/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (25,1,27,'13/08/2022') 
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (26,4,13,'14/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (27,5,4,'14/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (28,6,5,'14/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (29,7,7,'14/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (30,4,24,'14/08/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (31,3,30,'15/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (32,2,30,'15/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (33,4,32,'15/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (34,5,2,'15/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (35,6,24,'15/08/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (36,1,32,'16/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (37,3,11,'16/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (38,4,15,'16/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (39,5,19,'16/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (40,7,23,'16/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (41,7,38,'16/08/2022') 
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (42,6,39,'17/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (43,5,39,'17/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,4,12,'17/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,5,34,'17/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (46,6,21,'17/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (47,7,28,'17/08/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (48,4,27,'18/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (49,2,26,'18/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (50,2,12,'18/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (51,4,25,'18/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (52,6,24,'18/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (53,7,25,'18/08/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (54,6,25,'19/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (55,4,21,'19/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,3,23,'19/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (57,3,12,'19/08/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (58,5,23,'19/08/2022') 
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (59,6,21,'20/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (60,7,23,'20/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (61,5,34,'20/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (62,4,40,'20/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (63,3,12,'20/08/2022')
-
-
-
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (64,2,16,'21/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,4,26,'21/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,5,36,'21/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,6,27,'21/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (34,7,12,'21/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,5,17,'21/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (58,4,35,'22/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (39,3,25,'22/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,7,15,'22/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (13,7,34,'22/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (22,5,24,'22/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (31,5,14,'22/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,4,33,'23/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (37,6,13,'23/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (24,2,3,'23/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (12,3,7,'23/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (64,4,1,'23/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (63,5,3,'23/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (41,6,1,'24/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (27,4,2,'24/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (15,7,3,'24/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (24,7,4,'24/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (48,6,5,'24/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (27,5,6,'24/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (34,2,7,'25/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (33,4,8,'25/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (32,6,9,'25/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (25,3,10,'25/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (17,3,11,'25/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,3,12,'25/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (33,1,13,'26/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (22,2,14,'26/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (15,3,15,'26/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (27,4,16,'26/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (38,5,17,'26/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (46,6,18,'26/08/2022')
-
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,7,19,'27/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,1,20,'27/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,2,21,'27/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,3,22,'27/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,4,23,'27/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,5,24,'27/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (13,6,25,'28/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (35,7,26,'28/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (42,7,27,'28/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,6,28,'28/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,5,29,'28/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,4,30,'28/08/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (15,3,31,'29/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (23,2,32,'29/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (38,1,33,'29/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (47,3,34,'29/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,5,35,'29/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,6,36,'29/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (29,1,37,'30/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (18,2,38,'30/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (37,3,39,'30/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,4,40,'30/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,5,34,'30/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,6,32,'30/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,7,12,'31/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,6,19,'31/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,5,18,'31/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,4,27,'31/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,32,'31/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,2,35,'31/08/2022')
-
-
----- Insert ENTRADAS SEPTIEMBRE -------
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (22,1,13,'01/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (43,2,12,'01/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (24,3,11,'01/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (35,4,10,'01/08/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (14,5,9,'01/08/2022')    
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (25,6,8,'01/08/2022')     
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (38,2,7,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,3,6,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (13,4,5,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (51,5,4,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (33,6,3,'02/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (24,7,2,'02/08/2022')
-
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (25,5,1,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (16,5,3,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (27,5,5,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (34,4,6,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (42,3,7,'03/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (55,2,29,'03/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,4,28,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,5,27,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,6,26,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,4,25,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,24,'04/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,2,23,'04/08/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,22,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,5,21,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,6,15,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,4,14,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,6,13,'05/08/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,6,12,'05/08/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,16,'06/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,17,'06/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,5,18,'06/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,6,19,'06/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,4,20,'06/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,3,21,'06/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,31,'07/09/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,5,32,'07/09/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,34,'07/09/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,2,6,'07/09/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,4,'07/09/2022')     
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,5,3,'07/09/2022')     
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,6,28,'08/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,4,26,'08/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (34,3,25,'08/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,24,'08/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,2,21,'08/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,3,18,'08/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,17,'09/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (26,2,15,'09/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,14,'09/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,5,13,'09/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,4,32,'09/09/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,2,2,'10/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (38,3,4,'10/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,4,5,'10/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (16,5,6,'10/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,6,7,'10/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,6,8,'10/09/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,2,3,'11/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (35,4,2,'11/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,5,4,'11/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,6,32,'11/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (46,6,16,'11/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,4,22,'12/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,5,24,'12/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,23,'12/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,3,38,'12/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,3,'12/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,3,33,'13/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,6,36,'13/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,6,34,'13/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,7,27,'13/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,7,1,'13/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,7,2,'13/09/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,5,40,'14/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,6,39,'14/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,4,38,'14/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,3,37,'14/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,4,36,'14/09/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,2,21,'15/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,3,22,'15/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,5,23,'15/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,6,24,'15/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,7,25,'15/09/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,2,10,'16/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (63,3,11,'16/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,5,12,'16/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,7,1,'16/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,3,6,'16/09/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,2,14,'17/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,2,14,'17/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,5,23,'17/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,7,21,'17/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,7,15,'17/09/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,6,17,'18/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,5,23,'18/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,4,1,'18/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,7,'18/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,1,3,'18/09/2022') 
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,7,4,'19/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,6,5,'19/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,5,6,'19/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,4,4,'19/09/2022') 
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,3,10,'19/09/2022') 
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,2,3,'20/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,3,12,'20/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,32,'20/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,5,4,'20/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (54,6,5,'20/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,7,2,'20/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,7,5,'21/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (14,6,2,'21/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (26,5,15,'21/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,4,2,'21/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (43,3,5,'21/09/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,1,24,'22/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (47,2,16,'22/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,3,2,'22/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (38,4,1,'22/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,5,2,'22/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,6,4,'23/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,5,2,'23/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (35,4,12,'23/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,3,3,'23/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (34,2,19,'23/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,1,5,'23/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,2,15,'24/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,34,'24/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,3,12,'24/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,5,32,'24/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,6,40,'24/09/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,1,25,'25/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (27,2,26,'25/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (18,3,27,'25/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,4,28,'25/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (22,5,29,'25/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (55,6,30,'25/09/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,7,32,'26/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (36,5,33,'26/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (47,4,34,'26/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,3,35,'26/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (24,2,36,'26/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,1,37,'26/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,2,38,'27/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,3,39,'27/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,4,40,'27/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (63,5,1,'27/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,6,2,'27/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (65,7,3,'27/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,4,4,'27/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,7,5,'28/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,6,6,'28/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,5,7,'28/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,4,8,'28/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,3,9,'28/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,2,10,'28/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (6,2,11,'29/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,3,12,'29/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,4,13,'29/09/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,6,14,'30/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,5,15,'30/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,16,'30/09/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,17,'30/09/2022')
-
-
-
----- Insert ENTRADAS OCTUBRE -------
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,1,32,'01/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,1,32,'01/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,1,32,'01/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,1,32,'01/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,1,32,'01/10/2022')
-
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,15,'02/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,4,14,'02/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,5,13,'02/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,6,12,'02/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,2,11,'02/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (57,1,10,'02/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (48,4,9,'02/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (36,5,8,'02/10/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,6,7,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (23,5,6,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,6,5,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,7,4,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,7,3,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (25,5,2,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,4,20,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,3,1,'03/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (54,5,32,'03/10/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,3,10,'04/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (63,4,20,'04/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,5,30,'04/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (55,6,40,'04/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (4,7,27,'04/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (26,4,37,'04/10/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (1,3,21,'05/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (3,2,22,'05/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (47,4,23,'05/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (5,6,24,'05/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (56,7,25,'05/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (35,7,26,'05/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (2,7,27,'05/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,5,28,'05/10/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (11,3,29,'06/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (22,2,30,'06/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (33,4,31,'06/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (44,1,32,'06/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (59,1,33,'06/10/2022')
-
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (28,4,34,'07/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (37,4,35,'07/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (36,4,36,'07/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (45,4,37,'07/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (54,4,38,'07/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (53,4,39,'07/10/2022')
-INSERT INTO ENTRADAS(id_detalle_sala,id_funcion,id_cliente,fecha_entrada) VALUES (12,4,40,'07/10/2022')
-
-*/
 
 
 ---- Insert DETALLLE_COMPROBANTES -------
@@ -1010,6 +514,188 @@ INSERT INTO DETALLE_COMPROBANTES(id_comprobante,id_entrada, monto, cantidad) VAL
 INSERT INTO DETALLE_COMPROBANTES(id_comprobante,id_entrada, monto, cantidad) VALUES (14, 4, 200.50, 1)
 INSERT INTO DETALLE_COMPROBANTES(id_comprobante,id_entrada, monto, cantidad) VALUES (15, 5, 200.50, 1)
 INSERT INTO DETALLE_COMPROBANTES(id_comprobante,id_entrada, monto, cantidad) VALUES (16, 1, 200.50, 1)
+
+
+
+
+-------------------------------------------PROCEDIMIENTOS ALMACENADOS----------------------------------
+
+--SP CONSULTAR ENTRADAS
+GO
+CREATE PROC SP_CONSULTAR_ENTRADAS
+AS
+BEGIN
+	
+	SELECT * from ENTRADAS;
+END
+
+GO
+--INSERTAR MAESTRO
+CREATE PROC SP_INSERTAR_MAESTRO
+	@idFormaPago INT,
+	@idFormaCompra INT,
+	@idDescuento INT,
+	@idEstado INT,
+	@descripcion varchar (100),
+	@comprobante_nro int OUTPUT
+AS
+BEGIN
+	INSERT INTO COMPROBANTES(id_forma_pago, id_forma_compra, id_descuento, id_estado, descripcion)
+    VALUES (@idFormaPago, @idFormaCompra, @idDescuento, @idEstado, @descripcion);
+    --Asignamos el valor del último ID autogenerado (obtenido --  
+    --mediante la función SCOPE_IDENTITY() de SQLServer)	
+    SET @comprobante_nro = SCOPE_IDENTITY();
+END
+
+GO
+--SP_INSERTAR_DETALLE
+CREATE PROC SP_INSERTAR_DETALLE 
+	@idComprobante int,
+	@idEntrada int, 
+	@monto float, 
+	@cantidad int
+AS
+BEGIN
+	INSERT INTO DETALLE_COMPROBANTES(id_comprobante, id_entrada, monto, cantidad)
+    VALUES (@idComprobante, @idEntrada, @monto, @cantidad); 
+END
+
+GO
+
+--SP_ELIMINAR_COMPROBANTE
+CREATE PROC BORRAR_COMPROBANTE
+	@comprobante_nro int
+AS
+BEGIN
+	DELETE 
+	FROM DETALLE_COMPROBANTES
+	WHERE id_comprobante = @comprobante_nro
+
+	DELETE 
+	FROM COMPROBANTES
+	WHERE id_comprobante = @comprobante_nro
+END
+
+
+
+GO
+
+
+--MODIFICAR MAESTRO
+CREATE PROC SP_MODIFICAR_MAESTRO
+	@idFormaPago INT,
+	@idFormaCompra INT,
+	@idDescuento INT,
+	@idEstado INT,
+	@descripcion varchar (100),
+	@comprobante_nro int
+AS
+BEGIN
+	UPDATE COMPROBANTES SET id_forma_pago = @idFormaPago, id_forma_compra = @idFormaCompra, id_descuento = @idDescuento,
+		   id_estado = @idEstado, descripcion = @descripcion
+	WHERE id_comprobante = @comprobante_nro;
+	
+	DELETE DETALLE_COMPROBANTES
+	WHERE id_comprobante = @comprobante_nro;
+END
+
+
+GO
+
+--------------------------------------SP PARA TABLA SOPORTE-------------------------------------------
+
+--CONSULTAR PELICULAS
+CREATE PROC SP_CONSULTAR_PELICULAS
+AS
+BEGIN
+	SELECT * from PELICULAS;
+END
+
+GO
+
+
+--INSERTAR PELICULAS
+CREATE PROC SP_INSERTAR_PELICULA
+	@idClasificacion INT,
+	@idIdioma INT,
+	@idDirector INT,
+	@nombrePelicula VARCHAR (100),
+	@fechaEstreno DATETIME
+	--@pelicula_nro INT OUTPUT
+AS
+BEGIN
+	INSERT INTO PELICULAS(id_clasificacion, id_idioma, id_director, nombre_pelicula, fecha_estreno)
+    VALUES (@idClasificacion, @idIdioma, @idDirector, @nombrePelicula, @fechaEstreno)
+    --Asignamos el valor del último ID autogenerado (obtenido --  
+    --mediante la función SCOPE_IDENTITY() de SQLServer)	
+    --SET @pelicula_nro = SCOPE_IDENTITY();
+END
+
+GO
+
+--MODIFICAR PELICULA
+CREATE PROC SP_MODIFICAR_PELICULA
+	@idClasificacion INT,
+	@idIdioma INT,
+	@idDirector INT,
+	@nombrePelicula VARCHAR (100),
+	@fechaEstreno DATETIME,
+	@peliculaNro INT
+AS
+BEGIN
+	UPDATE PELICULAS SET id_clasificacion = @idClasificacion, id_idioma = @idIdioma, id_director = @idDirector,
+		   nombre_pelicula = @nombrePelicula, fecha_estreno = @fechaEstreno 
+	WHERE id_pelicula = @peliculaNro;
+	
+END
+
+
+GO
+--BORRAR PELICULA
+CREATE PROC BORRAR_PELICULA
+	@pelicula_nro int
+AS
+BEGIN
+	DELETE 
+	FROM PELICULAS
+	WHERE id_pelicula = @pelicula_nro
+END
+
+
+	select * from PELICULAS
+
+INSERT INTO PELICULAS(id_clasificacion, id_idioma, id_director, nombre_pelicula, fecha_estreno)
+    VALUES (1, 1, 1, 'PRUEBA1', '07/07/1985');
+
+
+GO
+--CONSULTAR DIRECTORES
+CREATE PROC SP_CONSULTAR_DIRECTORES
+AS
+BEGIN
+SELECT id_director,nombre FROM DIRECTORES
+END
+
+
+GO
+
+--CONSULTAR IDIOMAS
+CREATE PROC SP_CONSULTAR_IDIOMAS
+AS
+BEGIN
+SELECT id_idioma, idioma + ' | ' + subtitulos as idioma FROM IDIOMAS
+END
+
+
+GO
+--CONSULTAR CLASIFICACION
+CREATE PROC SP_CONSULTAR_CLASIFICACIONES
+AS
+BEGIN
+SELECT id_clasificacion, clasificacion from CLASIFICACIONES
+end
+
+
 
 
 
