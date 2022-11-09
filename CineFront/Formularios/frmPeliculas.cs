@@ -1,4 +1,5 @@
 ﻿using CineBack.soporte;
+using Clases.ApiRest;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,13 @@ namespace CineFront
             string respuesta = await GetHttp();
             List<Pelicula> lst = JsonConvert.DeserializeObject<List<Pelicula>>(respuesta);
             dgvPeliculas.DataSource = lst;
+            dgvPeliculas.Columns[0].Visible = false;
+            dgvPeliculas.Columns[1].Visible = false;
+            dgvPeliculas.Columns[2].Visible = false;
+            dgvPeliculas.Columns[3].Visible = false;
+            dgvPeliculas.Columns[4].HeaderText = "PELICULA";
+            dgvPeliculas.Columns[5].HeaderText = "FECHA ESTRENO";
+            dgvPeliculas.Columns[4].AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
         }
 
         public async Task<string> GetHttp()

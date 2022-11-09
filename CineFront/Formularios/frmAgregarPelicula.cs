@@ -8,15 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CineBack.acceso_a_datos;
+using CineBack.fachada;
+using CineBack.soporte;
+using Clases.ApiRest;
+using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CineFront
 {
     public partial class frmAgregarPelicula : Form
     {
+        DBApi dataApi;
+
         public frmAgregarPelicula()
         {
             InitializeComponent();
+            dataApi = new DBApi();
         }
 
 
@@ -43,6 +50,23 @@ namespace CineFront
             this.Close();
             frmHome frmHome = new frmHome();
             frmHome.Show();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Pelicula pelicula = new Pelicula();
+
+            pelicula.NombrePelicula = txNombre.Text;
+            pelicula.IdDirector = cboDirector.SelectedIndex;
+            pelicula.IdClasificacion = cboClasificacion.SelectedIndex;
+            pelicula.IdIdioma = cboidioma.SelectedIndex;
+            pelicula.FechaEstreno = dtpFechaestreno.Value;
+
+            string json = JsonConvert.SerializeObject(pelicula);
+
+            dynamic respuesta = dataApi.Post("https://localhost:44301/registrarPelicula",json);
+
+            MessageBox.Show(respuesta.ToString());
         }
     }
 }

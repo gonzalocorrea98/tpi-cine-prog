@@ -32,7 +32,6 @@ C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFr
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\Cine.frmLogin.resources
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.frmPeliculas.resources
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.frmReporte.resources
-C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.frmTransaccion.resources
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.csproj.GenerateResource.cache
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.AssemblyInfoInputs.cache
@@ -69,3 +68,6 @@ C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPI
 C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineFront\obj\Debug\net5.0-windows\CineFront.csproj.CopyComplete
 C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineFront\obj\Debug\net5.0-windows\CineFront.frmAgregarEntrada.resources
 C:\Users\Valdez\OneDrive\Documentos\Documentos Personales\Escritorio\Prog II\TPIprog\CineFront\obj\Debug\net5.0-windows\CineFront.frmEntradas.resources
+C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.frmAgregarEntrada.resources
+C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\obj\Debug\net5.0-windows\CineFront.frmEntradas.resources
+C:\Users\usuario\Desktop\TPI-CINE-PROG\CineFront\bin\Debug\net5.0-windows\RestSharp.dll

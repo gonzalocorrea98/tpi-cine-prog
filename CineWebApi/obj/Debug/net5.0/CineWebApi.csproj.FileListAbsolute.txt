@@ -109,3 +109,6 @@ C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\obj\Debug\net5.0\refint\CineWe
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\obj\Debug\net5.0\CineWebApi.pdb
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\obj\Debug\net5.0\CineWebApi.genruntimeconfig.cache
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\obj\Debug\net5.0\ref\CineWebApi.dll
+C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\bin\Debug\net5.0\RestSharp.dll

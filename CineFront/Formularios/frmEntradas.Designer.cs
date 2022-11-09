@@ -123,10 +123,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(232, 54);
+            this.dataGridView1.Location = new System.Drawing.Point(215, 38);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(556, 334);
+            this.dataGridView1.Size = new System.Drawing.Size(573, 350);
             this.dataGridView1.TabIndex = 12;
             // 
             // btnAgregar
@@ -147,7 +147,7 @@
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // frmTransaccion
+            // frmEntradas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,9 +159,10 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmTransaccion";
+            this.Name = "frmEntradas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTransaccion";
+            this.Load += new System.EventHandler(this.frmEntradas_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmTransaccion_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

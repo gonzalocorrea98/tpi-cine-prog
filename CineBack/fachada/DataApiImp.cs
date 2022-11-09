@@ -3,11 +3,14 @@ using CineBack.acceso_a_datos.implementacion;
 using CineBack.acceso_a_datos.interfaz;
 using CineBack.dominio;
 using CineBack.soporte;
+using Newtonsoft.Json;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace CineBack.fachada
 {
@@ -68,12 +71,6 @@ namespace CineBack.fachada
         {
             return daoP.Actualizar(pelicula);
         }
-
-
-        
-
-
-
 
     }
 }
