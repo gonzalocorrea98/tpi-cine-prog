@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineFront\\CineFront.csproj": {}
+    "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineFront\\CineFront.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineBack\\CineBack.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineBack\\CineBack.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineBack\\obj\\",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj",
+        "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,21 +73,17 @@
         }
       }
     },
-    "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineFront\\CineFront.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineFront\\CineFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineFront\\CineFront.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineFront\\CineFront.csproj",
         "projectName": "CineFront",
-        "projectPath": "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineFront\\CineFront.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineFront\\obj\\",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineFront\\CineFront.csproj",
+        "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineFront\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +97,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineBack\\CineBack.csproj": {
-                "projectPath": "C:\\Users\\usuario\\Desktop\\TPI-CINE-PROG\\CineBack\\CineBack.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj"
               }
             }
           }

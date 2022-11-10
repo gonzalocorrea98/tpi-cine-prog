@@ -34,3 +34,15 @@ C:\Users\usuario\Desktop\TPI-CINE-PROG\CineBack\obj\Debug\net5.0\CineBack.dll
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineBack\obj\Debug\net5.0\refint\CineBack.dll
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineBack\obj\Debug\net5.0\CineBack.pdb
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineBack\obj\Debug\net5.0\ref\CineBack.dll
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\bin\Debug\net5.0\CineBack.deps.json
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\bin\Debug\net5.0\CineBack.dll
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\bin\Debug\net5.0\CineBack.pdb
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\CineBack.csproj.AssemblyReference.cache
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\CineBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfoInputs.cache
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfo.cs
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\CineBack.csproj.CoreCompileInputs.cache
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\CineBack.dll
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\refint\CineBack.dll
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\CineBack.pdb
+C:\Users\Gonzalo\Desktop\cine-prog\CineBack\obj\Debug\net5.0\ref\CineBack.dll
