@@ -62,6 +62,7 @@ namespace CineBack.acceso_a_datos.implementacion
                 cmd.Parameters.AddWithValue("@idDirector", oPelicula.IdDirector);
                 cmd.Parameters.AddWithValue("@nombrePelicula", oPelicula.NombrePelicula);
                 cmd.Parameters.AddWithValue("@fechaEstreno", oPelicula.FechaEstreno);
+                cmd.ExecuteNonQuery();
 
                 //parámetro de salida:
 
@@ -70,7 +71,7 @@ namespace CineBack.acceso_a_datos.implementacion
                 pOut.DbType = DbType.Int32;
                 pOut.Direction = ParameterDirection.Output;
                 cmd.Parameters.Add(pOut);
-                cmd.ExecuteNonQuery();
+                
                 
                 int PeliculaNro = (int)pOut.Value;
                  

@@ -114,7 +114,6 @@ C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\bin\Debug\net5.0\Newtonsoft.Js
 C:\Users\usuario\Desktop\TPI-CINE-PROG\CineWebApi\bin\Debug\net5.0\RestSharp.dll
 C:\Users\Gonzalo\Desktop\cine-prog\CineWebApi\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Gonzalo\Desktop\cine-prog\CineWebApi\bin\Debug\net5.0\appsettings.json
-C:\Users\Gonzalo\Desktop\cine-prog\CineWebApi\bin\Debug\net5.0\CineWebApi.StaticWebAssets.xml
 C:\Users\Gonzalo\Desktop\cine-prog\CineWebApi\bin\Debug\net5.0\CineWebApi.exe
 C:\Users\Gonzalo\Desktop\cine-prog\CineWebApi\bin\Debug\net5.0\CineWebApi.deps.json
 C:\Users\Gonzalo\Desktop\cine-prog\CineWebApi\bin\Debug\net5.0\CineWebApi.runtimeconfig.json

@@ -4,14 +4,16 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CineBack.acceso_a_datos;
 using CineBack.fachada;
 using CineBack.soporte;
 using Clases.ApiRest;
-using Newtonsoft.Json;
+using RestSharp;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CineFront
@@ -25,7 +27,6 @@ namespace CineFront
             InitializeComponent();
             dataApi = new DBApi();
         }
-
 
         private void frmAgregarPelicula_Load(object sender, EventArgs e)
         {
@@ -52,21 +53,37 @@ namespace CineFront
             frmHome.Show();
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        private async void btnAceptar_Click(object sender, EventArgs e)
         {
             Pelicula pelicula = new Pelicula();
 
+            pelicula.IdPelicula = 0;
             pelicula.NombrePelicula = txNombre.Text;
             pelicula.IdDirector = cboDirector.SelectedIndex;
             pelicula.IdClasificacion = cboClasificacion.SelectedIndex;
             pelicula.IdIdioma = cboidioma.SelectedIndex;
             pelicula.FechaEstreno = dtpFechaestreno.Value;
 
-            string json = JsonConvert.SerializeObject(pelicula);
-
-            dynamic respuesta = dataApi.Post("https://localhost:44301/registrarPelicula",json);
-
-            MessageBox.Show(respuesta.ToString());
+            await PostPelicula(pelicula);
         }
+
+        public async Task<string> PostPelicula(Pelicula pelicula)
+        {
+            string url = "https://localhost:44301/registrarPelicula";
+            var client = new HttpClient();
+
+            var data = JsonSerializer.Serialize<Pelicula>(pelicula);
+            HttpContent content = new StringContent(data, System.Text.Encoding.UTF8, "application/json");
+            var HttpResponse = await client.PostAsync(url, content);
+
+            if (HttpResponse.IsSuccessStatusCode)
+            {
+                MessageBox.Show("Se cargo con exito la pelicula");
+                return "OK";
+            }
+            MessageBox.Show("Hubo un error al cargar la pelicula");
+            return "false";
+        }
+
     }
 }
