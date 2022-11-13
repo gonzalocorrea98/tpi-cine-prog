@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(-3, -17);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 614);
+            this.panel1.Size = new System.Drawing.Size(217, 666);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -108,14 +108,14 @@
             // 
             // dtp1
             // 
-            this.dtp1.Location = new System.Drawing.Point(275, 19);
+            this.dtp1.Location = new System.Drawing.Point(251, 21);
             this.dtp1.Name = "dtp1";
             this.dtp1.Size = new System.Drawing.Size(200, 20);
             this.dtp1.TabIndex = 5;
             // 
             // dtp2
             // 
-            this.dtp2.Location = new System.Drawing.Point(529, 19);
+            this.dtp2.Location = new System.Drawing.Point(505, 21);
             this.dtp2.Name = "dtp2";
             this.dtp2.Size = new System.Drawing.Size(200, 20);
             this.dtp2.TabIndex = 6;
@@ -146,7 +146,7 @@
             this.btnfiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnfiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
-            this.btnfiltro.Location = new System.Drawing.Point(778, 19);
+            this.btnfiltro.Location = new System.Drawing.Point(754, 21);
             this.btnfiltro.Name = "btnfiltro";
             this.btnfiltro.Size = new System.Drawing.Size(75, 23);
             this.btnfiltro.TabIndex = 10;

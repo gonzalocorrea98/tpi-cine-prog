@@ -144,3 +144,4 @@ C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-window
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.pdb
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.genruntimeconfig.cache
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\ref\CineFront.dll
+C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.Properties.Resources.resources
