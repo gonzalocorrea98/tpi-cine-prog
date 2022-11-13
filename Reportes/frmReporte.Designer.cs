@@ -31,22 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Button button1;
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporte));
             this.dtEntradasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsCine = new Reportes.dsCine();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblCinema = new System.Windows.Forms.Label();
             this.dtp1 = new System.Windows.Forms.DateTimePicker();
             this.dtp2 = new System.Windows.Forms.DateTimePicker();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dtEntradasTableAdapter = new Reportes.dsCineTableAdapters.dtEntradasTableAdapter();
             this.btnfiltro = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtEntradasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCine)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -79,32 +80,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(27)))), ((int)(((byte)(39)))));
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-3, -17);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 666);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel2.Controls.Add(this.lblCinema);
-            this.panel2.Location = new System.Drawing.Point(11, 254);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(199, 80);
-            this.panel2.TabIndex = 0;
-            // 
-            // lblCinema
-            // 
-            this.lblCinema.AutoSize = true;
-            this.lblCinema.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCinema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
-            this.lblCinema.Location = new System.Drawing.Point(14, 17);
-            this.lblCinema.Name = "lblCinema";
-            this.lblCinema.Size = new System.Drawing.Size(168, 42);
-            this.lblCinema.TabIndex = 11;
-            this.lblCinema.Text = "CINEMA";
             // 
             // dtp1
             // 
@@ -154,6 +136,27 @@
             this.btnfiltro.UseVisualStyleBackColor = false;
             this.btnfiltro.Click += new System.EventHandler(this.btnfiltro_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 141);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 388);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(15, 639);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "MessirveReport Alpha Version";
+            // 
             // frmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,8 +179,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtEntradasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCine)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -193,8 +196,8 @@
         private System.Windows.Forms.BindingSource dtEntradasBindingSource;
         private dsCineTableAdapters.dtEntradasTableAdapter dtEntradasTableAdapter;
         private System.Windows.Forms.Button btnfiltro;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblCinema;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
