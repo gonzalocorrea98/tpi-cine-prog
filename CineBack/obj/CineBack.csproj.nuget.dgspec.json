@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj": {}
+    "C:\\Users\\ger4r\\Desktop\\Prog II\\TPIprogramacion\\CineBack\\CineBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj": {
+    "C:\\Users\\ger4r\\Desktop\\Prog II\\TPIprogramacion\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "C:\\Users\\ger4r\\Desktop\\Prog II\\TPIprogramacion\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\CineBack.csproj",
-        "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\cine-prog\\CineBack\\obj\\",
+        "projectPath": "C:\\Users\\ger4r\\Desktop\\Prog II\\TPIprogramacion\\CineBack\\CineBack.csproj",
+        "packagesPath": "C:\\Users\\ger4r\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ger4r\\Desktop\\Prog II\\TPIprogramacion\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ger4r\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -20,17 +20,17 @@ namespace Reportes {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("CINE_CORDOBA_PROGDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("dsCine")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class CINE_CORDOBA_PROGDataSet : global::System.Data.DataSet {
+    public partial class dsCine : global::System.Data.DataSet {
         
-        private ENTRADASDataTable tableENTRADAS;
+        private dtEntradasDataTable tabledtEntradas;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public CINE_CORDOBA_PROGDataSet() {
+        public dsCine() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Reportes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected CINE_CORDOBA_PROGDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected dsCine(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Reportes {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["ENTRADAS"] != null)) {
-                    base.Tables.Add(new ENTRADASDataTable(ds.Tables["ENTRADAS"]));
+                if ((ds.Tables["dtEntradas"] != null)) {
+                    base.Tables.Add(new dtEntradasDataTable(ds.Tables["dtEntradas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Reportes {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ENTRADASDataTable ENTRADAS {
+        public dtEntradasDataTable dtEntradas {
             get {
-                return this.tableENTRADAS;
+                return this.tabledtEntradas;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            CINE_CORDOBA_PROGDataSet cln = ((CINE_CORDOBA_PROGDataSet)(base.Clone()));
+            dsCine cln = ((dsCine)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Reportes {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["ENTRADAS"] != null)) {
-                    base.Tables.Add(new ENTRADASDataTable(ds.Tables["ENTRADAS"]));
+                if ((ds.Tables["dtEntradas"] != null)) {
+                    base.Tables.Add(new dtEntradasDataTable(ds.Tables["dtEntradas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableENTRADAS = ((ENTRADASDataTable)(base.Tables["ENTRADAS"]));
+            this.tabledtEntradas = ((dtEntradasDataTable)(base.Tables["dtEntradas"]));
             if ((initTable == true)) {
-                if ((this.tableENTRADAS != null)) {
-                    this.tableENTRADAS.InitVars();
+                if ((this.tabledtEntradas != null)) {
+                    this.tabledtEntradas.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "CINE_CORDOBA_PROGDataSet";
+            this.DataSetName = "dsCine";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/CINE_CORDOBA_PROGDataSet.xsd";
+            this.Namespace = "http://tempuri.org/dsCine.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableENTRADAS = new ENTRADASDataTable();
-            base.Tables.Add(this.tableENTRADAS);
+            this.tabledtEntradas = new dtEntradasDataTable();
+            base.Tables.Add(this.tabledtEntradas);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeENTRADAS() {
+        private bool ShouldSerializedtEntradas() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            CINE_CORDOBA_PROGDataSet ds = new CINE_CORDOBA_PROGDataSet();
+            dsCine ds = new dsCine();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,25 @@ namespace Reportes {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void ENTRADASRowChangeEventHandler(object sender, ENTRADASRowChangeEvent e);
+        public delegate void dtEntradasRowChangeEventHandler(object sender, dtEntradasRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ENTRADASDataTable : global::System.Data.TypedTableBase<ENTRADASRow> {
+        public partial class dtEntradasDataTable : global::System.Data.TypedTableBase<dtEntradasRow> {
             
-            private global::System.Data.DataColumn columnid_entrada;
+            private global::System.Data.DataColumn columnFecha;
             
-            private global::System.Data.DataColumn columnid_detalle_sala;
+            private global::System.Data.DataColumn columnCliente;
             
-            private global::System.Data.DataColumn columnid_funcion;
-            
-            private global::System.Data.DataColumn columnid_cliente;
-            
-            private global::System.Data.DataColumn columnprecio;
-            
-            private global::System.Data.DataColumn columnfecha_entrada;
+            private global::System.Data.DataColumn columnPelicula;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENTRADASDataTable() {
-                this.TableName = "ENTRADAS";
+            public dtEntradasDataTable() {
+                this.TableName = "dtEntradas";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +296,7 @@ namespace Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal ENTRADASDataTable(global::System.Data.DataTable table) {
+            internal dtEntradasDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,56 +313,32 @@ namespace Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected ENTRADASDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected dtEntradasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn id_entradaColumn {
+            public global::System.Data.DataColumn FechaColumn {
                 get {
-                    return this.columnid_entrada;
+                    return this.columnFecha;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn id_detalle_salaColumn {
+            public global::System.Data.DataColumn ClienteColumn {
                 get {
-                    return this.columnid_detalle_sala;
+                    return this.columnCliente;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn id_funcionColumn {
+            public global::System.Data.DataColumn PeliculaColumn {
                 get {
-                    return this.columnid_funcion;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn id_clienteColumn {
-                get {
-                    return this.columnid_cliente;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn precioColumn {
-                get {
-                    return this.columnprecio;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn fecha_entradaColumn {
-                get {
-                    return this.columnfecha_entrada;
+                    return this.columnPelicula;
                 }
             }
             
@@ -383,57 +353,47 @@ namespace Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENTRADASRow this[int index] {
+            public dtEntradasRow this[int index] {
                 get {
-                    return ((ENTRADASRow)(this.Rows[index]));
+                    return ((dtEntradasRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ENTRADASRowChangeEventHandler ENTRADASRowChanging;
+            public event dtEntradasRowChangeEventHandler dtEntradasRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ENTRADASRowChangeEventHandler ENTRADASRowChanged;
+            public event dtEntradasRowChangeEventHandler dtEntradasRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ENTRADASRowChangeEventHandler ENTRADASRowDeleting;
+            public event dtEntradasRowChangeEventHandler dtEntradasRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ENTRADASRowChangeEventHandler ENTRADASRowDeleted;
+            public event dtEntradasRowChangeEventHandler dtEntradasRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddENTRADASRow(ENTRADASRow row) {
+            public void AdddtEntradasRow(dtEntradasRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENTRADASRow AddENTRADASRow(int id_detalle_sala, int id_funcion, int id_cliente, double precio, System.DateTime fecha_entrada) {
-                ENTRADASRow rowENTRADASRow = ((ENTRADASRow)(this.NewRow()));
+            public dtEntradasRow AdddtEntradasRow(System.DateTime Fecha, string Cliente, string Pelicula) {
+                dtEntradasRow rowdtEntradasRow = ((dtEntradasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        id_detalle_sala,
-                        id_funcion,
-                        id_cliente,
-                        precio,
-                        fecha_entrada};
-                rowENTRADASRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowENTRADASRow);
-                return rowENTRADASRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENTRADASRow FindByid_entrada(int id_entrada) {
-                return ((ENTRADASRow)(this.Rows.Find(new object[] {
-                            id_entrada})));
+                        Fecha,
+                        Cliente,
+                        Pelicula};
+                rowdtEntradasRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowdtEntradasRow);
+                return rowdtEntradasRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ENTRADASDataTable cln = ((ENTRADASDataTable)(base.Clone()));
+                dtEntradasDataTable cln = ((dtEntradasDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,73 +401,57 @@ namespace Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ENTRADASDataTable();
+                return new dtEntradasDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnid_entrada = base.Columns["id_entrada"];
-                this.columnid_detalle_sala = base.Columns["id_detalle_sala"];
-                this.columnid_funcion = base.Columns["id_funcion"];
-                this.columnid_cliente = base.Columns["id_cliente"];
-                this.columnprecio = base.Columns["precio"];
-                this.columnfecha_entrada = base.Columns["fecha_entrada"];
+                this.columnFecha = base.Columns["Fecha"];
+                this.columnCliente = base.Columns["Cliente"];
+                this.columnPelicula = base.Columns["Pelicula"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnid_entrada = new global::System.Data.DataColumn("id_entrada", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_entrada);
-                this.columnid_detalle_sala = new global::System.Data.DataColumn("id_detalle_sala", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_detalle_sala);
-                this.columnid_funcion = new global::System.Data.DataColumn("id_funcion", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_funcion);
-                this.columnid_cliente = new global::System.Data.DataColumn("id_cliente", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid_cliente);
-                this.columnprecio = new global::System.Data.DataColumn("precio", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnprecio);
-                this.columnfecha_entrada = new global::System.Data.DataColumn("fecha_entrada", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfecha_entrada);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnid_entrada}, true));
-                this.columnid_entrada.AutoIncrement = true;
-                this.columnid_entrada.AutoIncrementSeed = -1;
-                this.columnid_entrada.AutoIncrementStep = -1;
-                this.columnid_entrada.AllowDBNull = false;
-                this.columnid_entrada.ReadOnly = true;
-                this.columnid_entrada.Unique = true;
-                this.columnid_detalle_sala.AllowDBNull = false;
-                this.columnid_funcion.AllowDBNull = false;
-                this.columnid_cliente.AllowDBNull = false;
-                this.columnfecha_entrada.AllowDBNull = false;
+                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha);
+                this.columnCliente = new global::System.Data.DataColumn("Cliente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCliente);
+                this.columnPelicula = new global::System.Data.DataColumn("Pelicula", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPelicula);
+                this.columnFecha.AllowDBNull = false;
+                this.columnCliente.AllowDBNull = false;
+                this.columnCliente.MaxLength = 50;
+                this.columnPelicula.AllowDBNull = false;
+                this.columnPelicula.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENTRADASRow NewENTRADASRow() {
-                return ((ENTRADASRow)(this.NewRow()));
+            public dtEntradasRow NewdtEntradasRow() {
+                return ((dtEntradasRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ENTRADASRow(builder);
+                return new dtEntradasRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ENTRADASRow);
+                return typeof(dtEntradasRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ENTRADASRowChanged != null)) {
-                    this.ENTRADASRowChanged(this, new ENTRADASRowChangeEvent(((ENTRADASRow)(e.Row)), e.Action));
+                if ((this.dtEntradasRowChanged != null)) {
+                    this.dtEntradasRowChanged(this, new dtEntradasRowChangeEvent(((dtEntradasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -515,8 +459,8 @@ namespace Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ENTRADASRowChanging != null)) {
-                    this.ENTRADASRowChanging(this, new ENTRADASRowChangeEvent(((ENTRADASRow)(e.Row)), e.Action));
+                if ((this.dtEntradasRowChanging != null)) {
+                    this.dtEntradasRowChanging(this, new dtEntradasRowChangeEvent(((dtEntradasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -524,8 +468,8 @@ namespace Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ENTRADASRowDeleted != null)) {
-                    this.ENTRADASRowDeleted(this, new ENTRADASRowChangeEvent(((ENTRADASRow)(e.Row)), e.Action));
+                if ((this.dtEntradasRowDeleted != null)) {
+                    this.dtEntradasRowDeleted(this, new dtEntradasRowChangeEvent(((dtEntradasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -533,14 +477,14 @@ namespace Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ENTRADASRowDeleting != null)) {
-                    this.ENTRADASRowDeleting(this, new ENTRADASRowChangeEvent(((ENTRADASRow)(e.Row)), e.Action));
+                if ((this.dtEntradasRowDeleting != null)) {
+                    this.dtEntradasRowDeleting(this, new dtEntradasRowChangeEvent(((dtEntradasRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveENTRADASRow(ENTRADASRow row) {
+            public void RemovedtEntradasRow(dtEntradasRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -549,7 +493,7 @@ namespace Reportes {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                CINE_CORDOBA_PROGDataSet ds = new CINE_CORDOBA_PROGDataSet();
+                dsCine ds = new dsCine();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -567,7 +511,7 @@ namespace Reportes {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ENTRADASDataTable";
+                attribute2.FixedValue = "dtEntradasDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -611,98 +555,48 @@ namespace Reportes {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ENTRADASRow : global::System.Data.DataRow {
+        public partial class dtEntradasRow : global::System.Data.DataRow {
             
-            private ENTRADASDataTable tableENTRADAS;
+            private dtEntradasDataTable tabledtEntradas;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal ENTRADASRow(global::System.Data.DataRowBuilder rb) : 
+            internal dtEntradasRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableENTRADAS = ((ENTRADASDataTable)(this.Table));
+                this.tabledtEntradas = ((dtEntradasDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int id_entrada {
+            public System.DateTime Fecha {
                 get {
-                    return ((int)(this[this.tableENTRADAS.id_entradaColumn]));
+                    return ((global::System.DateTime)(this[this.tabledtEntradas.FechaColumn]));
                 }
                 set {
-                    this[this.tableENTRADAS.id_entradaColumn] = value;
+                    this[this.tabledtEntradas.FechaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int id_detalle_sala {
+            public string Cliente {
                 get {
-                    return ((int)(this[this.tableENTRADAS.id_detalle_salaColumn]));
+                    return ((string)(this[this.tabledtEntradas.ClienteColumn]));
                 }
                 set {
-                    this[this.tableENTRADAS.id_detalle_salaColumn] = value;
+                    this[this.tabledtEntradas.ClienteColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int id_funcion {
+            public string Pelicula {
                 get {
-                    return ((int)(this[this.tableENTRADAS.id_funcionColumn]));
+                    return ((string)(this[this.tabledtEntradas.PeliculaColumn]));
                 }
                 set {
-                    this[this.tableENTRADAS.id_funcionColumn] = value;
+                    this[this.tabledtEntradas.PeliculaColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int id_cliente {
-                get {
-                    return ((int)(this[this.tableENTRADAS.id_clienteColumn]));
-                }
-                set {
-                    this[this.tableENTRADAS.id_clienteColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double precio {
-                get {
-                    try {
-                        return ((double)(this[this.tableENTRADAS.precioColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'precio\' de la tabla \'ENTRADAS\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableENTRADAS.precioColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime fecha_entrada {
-                get {
-                    return ((global::System.DateTime)(this[this.tableENTRADAS.fecha_entradaColumn]));
-                }
-                set {
-                    this[this.tableENTRADAS.fecha_entradaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsprecioNull() {
-                return this.IsNull(this.tableENTRADAS.precioColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetprecioNull() {
-                this[this.tableENTRADAS.precioColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -710,22 +604,22 @@ namespace Reportes {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class ENTRADASRowChangeEvent : global::System.EventArgs {
+        public class dtEntradasRowChangeEvent : global::System.EventArgs {
             
-            private ENTRADASRow eventRow;
+            private dtEntradasRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENTRADASRowChangeEvent(ENTRADASRow row, global::System.Data.DataRowAction action) {
+            public dtEntradasRowChangeEvent(dtEntradasRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENTRADASRow Row {
+            public dtEntradasRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -741,7 +635,7 @@ namespace Reportes {
         }
     }
 }
-namespace Reportes.CINE_CORDOBA_PROGDataSetTableAdapters {
+namespace Reportes.dsCineTableAdapters {
     
     
     /// <summary>
@@ -753,7 +647,7 @@ namespace Reportes.CINE_CORDOBA_PROGDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ENTRADASTableAdapter : global::System.ComponentModel.Component {
+    public partial class dtEntradasTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -767,7 +661,7 @@ namespace Reportes.CINE_CORDOBA_PROGDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public ENTRADASTableAdapter() {
+        public dtEntradasTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -864,84 +758,51 @@ namespace Reportes.CINE_CORDOBA_PROGDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "ENTRADAS";
-            tableMapping.ColumnMappings.Add("id_entrada", "id_entrada");
-            tableMapping.ColumnMappings.Add("id_detalle_sala", "id_detalle_sala");
-            tableMapping.ColumnMappings.Add("id_funcion", "id_funcion");
-            tableMapping.ColumnMappings.Add("id_cliente", "id_cliente");
-            tableMapping.ColumnMappings.Add("precio", "precio");
-            tableMapping.ColumnMappings.Add("fecha_entrada", "fecha_entrada");
+            tableMapping.DataSetTable = "dtEntradas";
+            tableMapping.ColumnMappings.Add("Fecha", "Fecha");
+            tableMapping.ColumnMappings.Add("Cliente", "Cliente");
+            tableMapping.ColumnMappings.Add("Pelicula", "Pelicula");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [ENTRADAS] WHERE (([id_entrada] = @Original_id_entrada) AND ([id_detalle_sala] = @Original_id_detalle_sala) AND ([id_funcion] = @Original_id_funcion) AND ([id_cliente] = @Original_id_cliente) AND ((@IsNull_precio = 1 AND [precio] IS NULL) OR ([precio] = @Original_precio)) AND ([fecha_entrada] = @Original_fecha_entrada))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_entrada", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_entrada", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_detalle_sala", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_detalle_sala", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_funcion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_funcion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_precio", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "precio", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_precio", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "precio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fecha_entrada", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_entrada", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [ENTRADAS] ([id_detalle_sala], [id_funcion], [id_cliente], [precio], [fecha_entrada]) VALUES (@id_detalle_sala, @id_funcion, @id_cliente, @precio, @fecha_entrada);
-SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrada FROM ENTRADAS WHERE (id_entrada = SCOPE_IDENTITY())";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_detalle_sala", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_detalle_sala", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_funcion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_funcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@precio", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "precio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha_entrada", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_entrada", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [ENTRADAS] SET [id_detalle_sala] = @id_detalle_sala, [id_funcion] = @id_funcion, [id_cliente] = @id_cliente, [precio] = @precio, [fecha_entrada] = @fecha_entrada WHERE (([id_entrada] = @Original_id_entrada) AND ([id_detalle_sala] = @Original_id_detalle_sala) AND ([id_funcion] = @Original_id_funcion) AND ([id_cliente] = @Original_id_cliente) AND ((@IsNull_precio = 1 AND [precio] IS NULL) OR ([precio] = @Original_precio)) AND ([fecha_entrada] = @Original_fecha_entrada));
-SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrada FROM ENTRADAS WHERE (id_entrada = @id_entrada)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_detalle_sala", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_detalle_sala", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_funcion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_funcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_cliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@precio", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "precio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha_entrada", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_entrada", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_entrada", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_entrada", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_detalle_sala", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_detalle_sala", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_funcion", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_funcion", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_cliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_cliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_precio", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "precio", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_precio", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "precio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fecha_entrada", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_entrada", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_entrada", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_entrada", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Reportes.Properties.Settings.Default.CINE_CORDOBA_PROGConnectionString;
+            this._connection.ConnectionString = global::Reportes.Properties.Settings.Default.CINE_CORDOBA_PROGConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_" +
-                "entrada\r\nFROM            ENTRADAS\r\nWHERE        (fecha_entrada >= @valor1) AND (" +
-                "fecha_entrada <= @valor2)";
+            this._commandCollection[0].CommandText = @"SELECT        e.fecha_entrada AS Fecha, c.apellido_cliente AS Cliente, p.nombre_pelicula AS Pelicula
+FROM            ENTRADAS AS e INNER JOIN
+                         CLIENTES AS c ON e.id_cliente = c.id_cliente INNER JOIN
+                         FUNCIONES AS f ON e.id_funcion = f.id_funcion INNER JOIN
+                         PELICULAS AS p ON f.id_funcion = p.id_pelicula";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valor1", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_entrada", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valor2", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_entrada", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        e.fecha_entrada AS Fecha, c.apellido_cliente AS Cliente, p.nombre_pelicula AS Pelicula
+FROM            ENTRADAS AS e INNER JOIN
+                         CLIENTES AS c ON e.id_cliente = c.id_cliente INNER JOIN
+                         FUNCIONES AS f ON e.id_funcion = f.id_funcion INNER JOIN
+                         PELICULAS AS p ON f.id_funcion = p.id_pelicula
+WHERE        (e.fecha_entrada >= @valor1) AND (e.fecha_entrada <= @valor2)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valor1", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@valor2", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fillby(CINE_CORDOBA_PROGDataSet.ENTRADASDataTable dataTable, System.DateTime valor1, System.DateTime valor2) {
+        public virtual int Fill(dsCine.dtEntradasDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(valor1));
-            this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(valor2));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -953,11 +814,9 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CINE_CORDOBA_PROGDataSet.ENTRADASDataTable GetData(System.DateTime valor1, System.DateTime valor2) {
+        public virtual dsCine.dtEntradasDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(valor1));
-            this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(valor2));
-            CINE_CORDOBA_PROGDataSet.ENTRADASDataTable dataTable = new CINE_CORDOBA_PROGDataSet.ENTRADASDataTable();
+            dsCine.dtEntradasDataTable dataTable = new dsCine.dtEntradasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -965,148 +824,16 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(CINE_CORDOBA_PROGDataSet.ENTRADASDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(CINE_CORDOBA_PROGDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "ENTRADAS");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id_entrada, int Original_id_detalle_sala, int Original_id_funcion, int Original_id_cliente, global::System.Nullable<double> Original_precio, System.DateTime Original_fecha_entrada) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_entrada));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_id_detalle_sala));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_id_funcion));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_id_cliente));
-            if ((Original_precio.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((double)(Original_precio.Value));
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(dsCine.dtEntradasDataTable dataTable, System.DateTime valor1, System.DateTime valor2) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(valor1));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(valor2));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_fecha_entrada));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int id_detalle_sala, int id_funcion, int id_cliente, global::System.Nullable<double> precio, System.DateTime fecha_entrada) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id_detalle_sala));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(id_funcion));
-            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(id_cliente));
-            if ((precio.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((double)(precio.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(fecha_entrada));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int id_detalle_sala, int id_funcion, int id_cliente, global::System.Nullable<double> precio, System.DateTime fecha_entrada, int Original_id_entrada, int Original_id_detalle_sala, int Original_id_funcion, int Original_id_cliente, global::System.Nullable<double> Original_precio, System.DateTime Original_fecha_entrada, int id_entrada) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id_detalle_sala));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(id_funcion));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(id_cliente));
-            if ((precio.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((double)(precio.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(fecha_entrada));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_id_entrada));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_id_detalle_sala));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_id_funcion));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_id_cliente));
-            if ((Original_precio.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((double)(Original_precio.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_fecha_entrada));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(id_entrada));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int id_detalle_sala, int id_funcion, int id_cliente, global::System.Nullable<double> precio, System.DateTime fecha_entrada, int Original_id_entrada, int Original_id_detalle_sala, int Original_id_funcion, int Original_id_cliente, global::System.Nullable<double> Original_precio, System.DateTime Original_fecha_entrada) {
-            return this.Update(id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrada, Original_id_entrada, Original_id_detalle_sala, Original_id_funcion, Original_id_cliente, Original_precio, Original_fecha_entrada, Original_id_entrada);
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
     }
     
@@ -1122,8 +849,6 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         
         private UpdateOrderOption _updateOrder;
         
-        private ENTRADASTableAdapter _eNTRADASTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1136,20 +861,6 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public ENTRADASTableAdapter ENTRADASTableAdapter {
-            get {
-                return this._eNTRADASTableAdapter;
-            }
-            set {
-                this._eNTRADASTableAdapter = value;
             }
         }
         
@@ -1172,10 +883,6 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._eNTRADASTableAdapter != null) 
-                            && (this._eNTRADASTableAdapter.Connection != null))) {
-                    return this._eNTRADASTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -1189,9 +896,6 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._eNTRADASTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -1201,17 +905,8 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(CINE_CORDOBA_PROGDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(dsCine dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._eNTRADASTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.ENTRADAS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._eNTRADASTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -1220,16 +915,8 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(CINE_CORDOBA_PROGDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(dsCine dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._eNTRADASTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.ENTRADAS.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._eNTRADASTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1238,16 +925,8 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(CINE_CORDOBA_PROGDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(dsCine dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._eNTRADASTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.ENTRADAS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._eNTRADASTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1280,17 +959,12 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(CINE_CORDOBA_PROGDataSet dataSet) {
+        public virtual int UpdateAll(dsCine dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._eNTRADASTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._eNTRADASTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
-                        "sma cadena de conexión.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1324,15 +998,6 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._eNTRADASTableAdapter != null)) {
-                    revertConnections.Add(this._eNTRADASTableAdapter, this._eNTRADASTableAdapter.Connection);
-                    this._eNTRADASTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._eNTRADASTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._eNTRADASTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._eNTRADASTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._eNTRADASTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1390,10 +1055,6 @@ SELECT id_entrada, id_detalle_sala, id_funcion, id_cliente, precio, fecha_entrad
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._eNTRADASTableAdapter != null)) {
-                    this._eNTRADASTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._eNTRADASTableAdapter]));
-                    this._eNTRADASTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

@@ -16,8 +16,10 @@ namespace CineBack.acceso_a_datos
 
         private HelperDao()
         {
-            cnn = new SqlConnection(@"Data Source=GONZALOJC1;Initial Catalog=CINE_CORDOBA_PROG;Integrated Security=True");
+            //cnn = new SqlConnection(@"Data Source=GONZALOJC1;Initial Catalog=CINE_CORDOBA_PROG;Integrated Security=True");
             //cnn = new SqlConnection(@"Data Source=DESKTOP-47S0GDS;Initial Catalog=CINE_CORDOBA_PROG;Integrated Security=True");
+            cnn = new SqlConnection(@"Data Source=DESKTOP-8J5BPS8;Initial Catalog=CINE_CORDOBA_PROG;Integrated Security=True");
+
         }
 
         public static HelperDao ObtenerInstancia()

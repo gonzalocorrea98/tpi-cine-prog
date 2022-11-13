@@ -65,13 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CINE_CORDOBA_PROGDataSet.cs">
-      <DependentUpon>CINE_CORDOBA_PROGDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CINE_CORDOBA_PROGDataSet.Designer.cs">
+    <Compile Include="dsCine.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CINE_CORDOBA_PROGDataSet.xsd</DependentUpon>
+      <DependentUpon>dsCine.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmReporte.cs">
       <SubType>Form</SubType>
@@ -95,16 +92,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="rptEntradas.rdlc" />
-    <None Include="CINE_CORDOBA_PROGDataSet.xsc">
-      <DependentUpon>CINE_CORDOBA_PROGDataSet.xsd</DependentUpon>
+    <None Include="dsCine.xsc">
+      <DependentUpon>dsCine.xsd</DependentUpon>
     </None>
-    <None Include="CINE_CORDOBA_PROGDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CINE_CORDOBA_PROGDataSet.Designer.cs</LastGenOutput>
+    <None Include="dsCine.xsd">
       <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCine.Designer.cs</LastGenOutput>
     </None>
-    <None Include="CINE_CORDOBA_PROGDataSet.xss">
-      <DependentUpon>CINE_CORDOBA_PROGDataSet.xsd</DependentUpon>
+    <None Include="dsCine.xss">
+      <DependentUpon>dsCine.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
