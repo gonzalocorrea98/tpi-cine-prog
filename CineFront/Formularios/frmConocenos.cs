@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace CineFront
 {
@@ -18,10 +19,7 @@ namespace CineFront
             InitializeComponent();
         }
 
-        private void frmConocenos_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -64,5 +62,13 @@ namespace CineFront
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //lklRepositorio.LinkVisited = true;
+            Process.Start("explorer.exe", "https://github.com/gonzalocorrea98/tpi-cine-prog");
+        }
+
+       
     }
 }

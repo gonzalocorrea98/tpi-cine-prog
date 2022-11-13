@@ -71,9 +71,7 @@ namespace CineFront
 
         private void reporteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmReporte reporte = new frmReporte();
-            reporte.Show();
-            this.Close();
+            MessageBox.Show("Inicializar el proyecto Reportes.","INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void conocenosToolStripMenuItem_Click(object sender, EventArgs e)

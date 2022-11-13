@@ -133,7 +133,6 @@ C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-window
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.frmHome.resources
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\Cine.frmLogin.resources
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.frmPeliculas.resources
-C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.frmReporte.resources
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.csproj.GenerateResource.cache
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ger4r\Desktop\Prog II\TPIprogramacion\CineFront\obj\Debug\net5.0-windows\CineFront.AssemblyInfoInputs.cache

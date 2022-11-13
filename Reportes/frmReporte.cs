@@ -58,7 +58,7 @@ namespace Reportes
 
         private void button1_Click(object sender, EventArgs e)
         {
-           if (MessageBox.Show("Está por cerrar la aplicación", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+           if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
             Application.Exit();
         }
 
