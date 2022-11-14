@@ -22,11 +22,19 @@ namespace CineFront
     public partial class frmAgregarPelicula : Form
     {
         DBApi dataApi;
+        private Pelicula pelicula = null;
 
         public frmAgregarPelicula()
         {
             InitializeComponent();
             dataApi = new DBApi();
+        }
+
+        public frmAgregarPelicula(Pelicula pelicula)
+        {
+            InitializeComponent();
+            dataApi = new DBApi();
+            this.pelicula = pelicula;
         }
 
         private void frmAgregarPelicula_Load(object sender, EventArgs e)
@@ -45,6 +53,19 @@ namespace CineFront
             cboClasificacion.DataSource = tabla3;
             cboClasificacion.ValueMember = "id_clasificacion";
             cboClasificacion.DisplayMember = "clasificacion";
+
+
+            if (pelicula != null)
+            {
+                txNombre.Text = pelicula.NombrePelicula;
+                cboDirector.SelectedValue = pelicula.IdDirector;
+                cboidioma.SelectedValue = pelicula.IdIdioma;
+                cboClasificacion.SelectedValue = pelicula.IdClasificacion;
+                dtpFechaestreno.Value = pelicula.FechaEstreno;
+            }
+
+
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

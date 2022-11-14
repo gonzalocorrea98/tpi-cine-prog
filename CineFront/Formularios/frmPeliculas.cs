@@ -33,6 +33,7 @@ namespace CineFront
             dgvPeliculas.Columns[4].HeaderText = "PELICULA";
             dgvPeliculas.Columns[5].HeaderText = "FECHA ESTRENO";
             dgvPeliculas.Columns[4].AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+           
         }
 
         public async Task<string> GetHttp()
@@ -102,7 +103,31 @@ namespace CineFront
         {
             frmAgregarPelicula agregarPelicula = new frmAgregarPelicula();
             agregarPelicula.ShowDialog();
+            cargar();
         }
+
+        private void cargar()
+        {
+      
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvPeliculas.CurrentRow != null)
+            {
+                Pelicula peliculaSeleccionada;
+                peliculaSeleccionada = (Pelicula)dgvPeliculas.CurrentRow.DataBoundItem;
+
+                frmAgregarPelicula editarPelicula = new frmAgregarPelicula(peliculaSeleccionada);
+                editarPelicula.ShowDialog();
+                cargar();
+            }
+            else
+                MessageBox.Show("Debe seleccionar una Película.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+
+
+        }
+
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {

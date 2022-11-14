@@ -36,6 +36,7 @@
             this.btnVolver = new System.Windows.Forms.Button();
             this.dgvPeliculas = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).BeginInit();
@@ -115,6 +116,7 @@
             this.dgvPeliculas.Location = new System.Drawing.Point(216, 32);
             this.dgvPeliculas.Name = "dgvPeliculas";
             this.dgvPeliculas.RowTemplate.Height = 25;
+            this.dgvPeliculas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPeliculas.Size = new System.Drawing.Size(572, 374);
             this.dgvPeliculas.TabIndex = 11;
             // 
@@ -136,12 +138,31 @@
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(27)))), ((int)(((byte)(39)))));
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
+            this.btnEditar.FlatAppearance.BorderSize = 2;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
+            this.btnEditar.Location = new System.Drawing.Point(309, 412);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 30);
+            this.btnEditar.TabIndex = 13;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // frmPeliculas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvPeliculas);
             this.Controls.Add(this.btnVolver);
@@ -172,5 +193,6 @@
         private System.Windows.Forms.DataGridView dgvPeliculas;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
