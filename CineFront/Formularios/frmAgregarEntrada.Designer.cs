@@ -139,6 +139,7 @@
             this.Name = "frmAgregarEntrada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAgregarEntrada";
+            this.Load += new System.EventHandler(this.frmAgregarEntrada_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmAgregarEntrada_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

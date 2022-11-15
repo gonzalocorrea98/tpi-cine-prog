@@ -19,10 +19,6 @@ namespace CineFront
 {
     public partial class frmEntradas : Form
     {
-
-        string url = "https://localhost:44301/entradas";
-
-
         public frmEntradas()
         {
             InitializeComponent();
@@ -32,36 +28,60 @@ namespace CineFront
         {
             string respuesta = await GetHttp();
             List<Entrada> lst = JsonConvert.DeserializeObject<List<Entrada>>(respuesta);
-            dataGridView1.DataSource = lst;
+            dgvEntradas.DataSource = lst;
         }
 
+        //************************************* METODOS *************************************
+
+        //GET
         public async Task<string> GetHttp()
         {
+            string url = "https://localhost:44301/entradas";
+
             WebRequest oRequest = WebRequest.Create(url);
             WebResponse oResponse = oRequest.GetResponse();
             StreamReader sr = new StreamReader(oResponse.GetResponseStream());
             return await sr.ReadToEndAsync();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        //DELETE
+
+        //************************************* BOTONES *************************************
+
+        //AGREGAR
+        private void btnAgregar_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
-                Application.Exit();
+            frmAgregarEntrada agregarEntrada = new frmAgregarEntrada();
+            agregarEntrada.Show();
+            this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //EDITAR
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //ELIMINAR
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //VOLVER
+        private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();
             frmHome frmHome = new frmHome();
             frmHome.Show();
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        //SALIR
+        private void label6_Click(object sender, EventArgs e)
         {
-            frmAgregarEntrada agregarEntrada = new frmAgregarEntrada();
-            agregarEntrada.ShowDialog();
+            if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                Application.Exit();
         }
-
 
 
         [DllImport("user32.Dll", EntryPoint = "ReleaseCapture")]

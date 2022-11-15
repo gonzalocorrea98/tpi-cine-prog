@@ -18,22 +18,37 @@ namespace CineFront
             InitializeComponent();
         }
 
+        private void frmAgregarEntrada_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        //************************************* METODOS *************************************
+
+        //POST
+
+        //PUT
+
+        //************************************* BOTONES *************************************
+
+        //AGREGAR
+
+        //EDITAR
+
+        //CANCELAR
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmHome frmHome = new frmHome();
-            frmHome.Show();
+            frmEntradas formularioEntradas = new frmEntradas();
+            formularioEntradas.Show();
         }
 
-
-
-
-
-
-
-
-
-
+        //SALIR
+        private void label6_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                Application.Exit();
+        }
 
 
         [DllImport("user32.Dll", EntryPoint = "ReleaseCapture")]
@@ -63,12 +78,6 @@ namespace CineFront
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
-                Application.Exit();
         }
     }
 }

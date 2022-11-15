@@ -20,6 +20,7 @@ namespace CineWebApi.Controllers
             dataApi = new DataApiImp();
         }
 
+
         [HttpGet("/peliculas")]
         public IActionResult GetProductos()
         {

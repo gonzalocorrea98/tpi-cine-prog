@@ -21,6 +21,7 @@ namespace CineWebApi.Controllers
             dataApi = new DataApiImp();
         }
 
+
         [HttpGet("/entradas")]
         public IActionResult GetProductos()
         {
@@ -28,8 +29,8 @@ namespace CineWebApi.Controllers
             try
             {
                 lst = dataApi.GetEntradas();
-                return Ok(lst);
 
+                return Ok(lst);
             }
             catch (Exception ex)
             {
@@ -56,14 +57,12 @@ namespace CineWebApi.Controllers
             }
         }
 
-
         
         [HttpDelete("/borrarcomprobante")]
         public IActionResult DeleteComprobante(int nro)
         {
             return Ok(dataApi.DeleteComprobante(nro));
         }
-
 
         
         [HttpPut("/actualizarcomprobante")]
