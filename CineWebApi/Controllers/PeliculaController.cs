@@ -28,7 +28,6 @@ namespace CineWebApi.Controllers
             {
                 lst = dataApi.GetPeliculas();
                 return Ok(lst);
-
             }
             catch (Exception ex)
             {
@@ -46,7 +45,6 @@ namespace CineWebApi.Controllers
                 {
                     return BadRequest("Datos de comprobante incorrectos!");
                 }
-
                 return Ok(dataApi.SavePelicula(pelicula));
             }
             catch (Exception)
@@ -56,7 +54,6 @@ namespace CineWebApi.Controllers
         }
 
 
-
         [HttpDelete("/borrarPelicula")]
         public IActionResult DeletePelicula(int nro)
         {
@@ -64,15 +61,10 @@ namespace CineWebApi.Controllers
         }
 
 
-        
         [HttpPut("/actualizarPelicula")]
         public IActionResult UpdateComprobante(Pelicula pelicula)
         {
             return Ok(dataApi.UpdatePelicula(pelicula));
         }
-
-
-
-
     }
 }

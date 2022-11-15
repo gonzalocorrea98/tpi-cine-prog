@@ -662,12 +662,6 @@ BEGIN
 END
 
 
-	select * from PELICULAS
-
-INSERT INTO PELICULAS(id_clasificacion, id_idioma, id_director, nombre_pelicula, fecha_estreno)
-    VALUES (1, 1, 1, 'PRUEBA1', '07/07/1985');
-
-
 GO
 --CONSULTAR DIRECTORES
 CREATE PROC SP_CONSULTAR_DIRECTORES

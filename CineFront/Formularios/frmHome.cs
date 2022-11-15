@@ -19,23 +19,50 @@ namespace CineFront
             InitializeComponent();
         }
 
+        //************************************* MENU *************************************
 
-        [DllImport("user32.Dll", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.Dll", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
-
-      
-
-      
+        //SALIR
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
                 Application.Exit();
         }
 
-      
+        //PELICULAS
+        private void tablaPelículaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPeliculas peliculas = new frmPeliculas();
+            peliculas.Show();
+            this.Close();
+        }
+
+        //ENTRADAS
+        private void ventaDeEntradasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEntradas transaccion = new frmEntradas();
+            transaccion.Show();
+            this.Close();
+        }
+
+        //REPORTE
+        private void reporteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Inicializar el proyecto Reportes.", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        //CONOCENOS
+        private void conocenosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConocenos conocenos = new frmConocenos();
+            conocenos.Show();
+            this.Close();
+        }
+
+
+        [DllImport("user32.Dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.Dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
         private void panel1_MouseDown_1(object sender, MouseEventArgs e)
         {
@@ -55,39 +82,10 @@ namespace CineFront
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void tablaPelículaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPeliculas peliculas = new frmPeliculas();
-            peliculas.Show();
-            this.Close();
-        }
-
-        private void ventaDeEntradasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            frmEntradas transaccion = new frmEntradas();
-            transaccion.Show();
-            this.Close();
-        }
-
-        private void reporteToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Inicializar el proyecto Reportes.","INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void conocenosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmConocenos conocenos = new frmConocenos();
-            conocenos.Show();
-            this.Close();
-        }
-
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        
+        }   
     }
 }

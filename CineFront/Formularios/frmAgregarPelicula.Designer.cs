@@ -45,6 +45,7 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             this.cboDirector.Location = new System.Drawing.Point(310, 133);
             this.cboDirector.Name = "cboDirector";
             this.cboDirector.Size = new System.Drawing.Size(232, 23);
-            this.cboDirector.TabIndex = 3;
+            this.cboDirector.TabIndex = 1;
             // 
             // cboClasificacion
             // 
@@ -65,7 +66,7 @@
             this.cboClasificacion.Location = new System.Drawing.Point(310, 214);
             this.cboClasificacion.Name = "cboClasificacion";
             this.cboClasificacion.Size = new System.Drawing.Size(188, 23);
-            this.cboClasificacion.TabIndex = 4;
+            this.cboClasificacion.TabIndex = 3;
             // 
             // cboidioma
             // 
@@ -74,7 +75,7 @@
             this.cboidioma.Location = new System.Drawing.Point(310, 174);
             this.cboidioma.Name = "cboidioma";
             this.cboidioma.Size = new System.Drawing.Size(188, 23);
-            this.cboidioma.TabIndex = 5;
+            this.cboidioma.TabIndex = 2;
             // 
             // txNombre
             // 
@@ -82,7 +83,7 @@
             this.txNombre.Location = new System.Drawing.Point(310, 93);
             this.txNombre.Name = "txNombre";
             this.txNombre.Size = new System.Drawing.Size(232, 23);
-            this.txNombre.TabIndex = 6;
+            this.txNombre.TabIndex = 0;
             // 
             // labelNombre
             // 
@@ -129,7 +130,7 @@
             this.dtpFechaestreno.Location = new System.Drawing.Point(310, 261);
             this.dtpFechaestreno.Name = "dtpFechaestreno";
             this.dtpFechaestreno.Size = new System.Drawing.Size(232, 23);
-            this.dtpFechaestreno.TabIndex = 11;
+            this.dtpFechaestreno.TabIndex = 4;
             // 
             // labelFechaEstreno
             // 
@@ -207,7 +208,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(403, 325);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 30);
-            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -222,9 +223,27 @@
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 20);
-            this.label6.TabIndex = 16;
+            this.label6.TabIndex = 7;
             this.label6.Text = "X";
             this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(27)))), ((int)(((byte)(39)))));
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
+            this.btnEditar.FlatAppearance.BorderSize = 2;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
+            this.btnEditar.Location = new System.Drawing.Point(288, 325);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 30);
+            this.btnEditar.TabIndex = 5;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // frmAgregarPelicula
             // 
@@ -232,6 +251,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(554, 450);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -278,5 +298,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

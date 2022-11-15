@@ -15,26 +15,27 @@ using CineBack.fachada;
 using CineBack.soporte;
 using Clases.ApiRest;
 using RestSharp;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CineFront
 {
     public partial class frmAgregarPelicula : Form
     {
-        DBApi dataApi;
-        private Pelicula pelicula = null;
+        private Pelicula peliculaCargada = null;
+        frmPeliculas formpeliculas = new frmPeliculas();
 
         public frmAgregarPelicula()
         {
             InitializeComponent();
-            dataApi = new DBApi();
+            btnAceptar.Show();
+            btnEditar.Hide();
         }
 
-        public frmAgregarPelicula(Pelicula pelicula)
+        public frmAgregarPelicula(Pelicula peliculaCargada)
         {
             InitializeComponent();
-            dataApi = new DBApi();
-            this.pelicula = pelicula;
+            this.peliculaCargada = peliculaCargada;
+            btnAceptar.Hide();
+            btnEditar.Show();
         }
 
         private void frmAgregarPelicula_Load(object sender, EventArgs e)
@@ -43,52 +44,38 @@ namespace CineFront
             cboDirector.DataSource = tabla1;
             cboDirector.ValueMember = "id_director";
             cboDirector.DisplayMember = "nombre";
+            cboDirector.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboDirector.SelectedIndex = -1;
 
             DataTable tabla2 = HelperDao.ObtenerInstancia().ConsultaSQL("SP_CONSULTAR_IDIOMAS", null);
             cboidioma.DataSource = tabla2;
             cboidioma.ValueMember = "id_idioma";
             cboidioma.DisplayMember = "idioma";
+            cboidioma.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboidioma.SelectedIndex = -1;
 
             DataTable tabla3 = HelperDao.ObtenerInstancia().ConsultaSQL("SP_CONSULTAR_CLASIFICACIONES", null);
             cboClasificacion.DataSource = tabla3;
             cboClasificacion.ValueMember = "id_clasificacion";
             cboClasificacion.DisplayMember = "clasificacion";
+            cboClasificacion.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboClasificacion.SelectedIndex = -1;
 
+            dtpFechaestreno.Value = DateTime.Today;
 
-            if (pelicula != null)
+            if (peliculaCargada != null)     //cargar datos de la pelicula seleccionada
             {
-                txNombre.Text = pelicula.NombrePelicula;
-                cboDirector.SelectedValue = pelicula.IdDirector;
-                cboidioma.SelectedValue = pelicula.IdIdioma;
-                cboClasificacion.SelectedValue = pelicula.IdClasificacion;
-                dtpFechaestreno.Value = pelicula.FechaEstreno;
+                txNombre.Text = peliculaCargada.NombrePelicula;
+                cboDirector.SelectedValue = peliculaCargada.IdDirector;
+                cboidioma.SelectedValue = peliculaCargada.IdIdioma;
+                cboClasificacion.SelectedValue = peliculaCargada.IdClasificacion;
+                dtpFechaestreno.Value = peliculaCargada.FechaEstreno;
             }
-
-
-
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            frmHome frmHome = new frmHome();
-            frmHome.Show();
-        }
+        //************************************* METODOS *************************************
 
-        private async void btnAceptar_Click(object sender, EventArgs e)
-        {
-            Pelicula pelicula = new Pelicula();
-
-            pelicula.IdPelicula = 0;
-            pelicula.NombrePelicula = txNombre.Text;
-            pelicula.IdDirector = cboDirector.SelectedIndex;
-            pelicula.IdClasificacion = cboClasificacion.SelectedIndex;
-            pelicula.IdIdioma = cboidioma.SelectedIndex;
-            pelicula.FechaEstreno = dtpFechaestreno.Value;
-
-            await PostPelicula(pelicula);
-        }
-
+        //POST
         public async Task<string> PostPelicula(Pelicula pelicula)
         {
             string url = "https://localhost:44301/registrarPelicula";
@@ -100,11 +87,80 @@ namespace CineFront
 
             if (HttpResponse.IsSuccessStatusCode)
             {
-                MessageBox.Show("Se cargo con exito la pelicula");
+                MessageBox.Show("Se cargo con exito la película");
                 return "OK";
             }
-            MessageBox.Show("Hubo un error al cargar la pelicula");
+            MessageBox.Show("Hubo un error al cargar la película");
             return "false";
+        }
+
+        //PUT
+        public async Task<string> PutPelicula(Pelicula pelicula)
+        {
+            string url = "https://localhost:44301/actualizarPelicula";
+            var client = new HttpClient();
+
+            var data = JsonSerializer.Serialize<Pelicula>(pelicula);
+            HttpContent content = new StringContent(data, System.Text.Encoding.UTF8, "application/json");
+            var HttpResponse = await client.PutAsync(url, content);
+
+            if (HttpResponse.IsSuccessStatusCode)
+            {
+                MessageBox.Show("Se edito con exito la película");
+                return "OK";
+            }
+            MessageBox.Show("Hubo un error al cargar la película");
+            return "false";
+        }
+
+        //************************************* BOTONES *************************************
+
+        //ACEPTAR
+        private async void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Pelicula pelicula = new Pelicula();
+
+            pelicula.IdPelicula = 0;
+            pelicula.NombrePelicula = txNombre.Text;
+            pelicula.IdDirector = (int)cboDirector.SelectedValue;
+            pelicula.IdClasificacion = (int)cboClasificacion.SelectedValue;
+            pelicula.IdIdioma = (int)cboidioma.SelectedValue;
+            pelicula.FechaEstreno = dtpFechaestreno.Value;
+
+            await PostPelicula(pelicula);
+            formpeliculas.Show();
+            this.Close();
+        }
+
+        //EDITAR
+        private async void btnEditar_Click(object sender, EventArgs e)
+        {
+            Pelicula pelicula = new Pelicula();
+
+            pelicula.IdPelicula = peliculaCargada.IdPelicula;
+            pelicula.NombrePelicula = txNombre.Text;
+            pelicula.IdDirector = (int)cboDirector.SelectedValue;
+            pelicula.IdClasificacion = (int)cboClasificacion.SelectedValue;
+            pelicula.IdIdioma = (int)cboidioma.SelectedValue;
+            pelicula.FechaEstreno = dtpFechaestreno.Value;
+
+            await PutPelicula(pelicula);
+            formpeliculas.Show();
+            this.Close();
+        }
+
+        //CANCELAR
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            formpeliculas.Show();
+            this.Close();
+        }
+
+        //SALIR
+        private void label6_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                Application.Exit();
         }
 
 
@@ -112,7 +168,6 @@ namespace CineFront
         private extern static void ReleaseCapture();
         [DllImport("user32.Dll", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -125,12 +180,6 @@ namespace CineFront
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
 
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Está por cerrar la aplicación.", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.OK)
-                Application.Exit();
         }
     }
 }
