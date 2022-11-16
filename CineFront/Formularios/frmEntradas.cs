@@ -51,7 +51,7 @@ namespace CineFront
         //AGREGAR
         private void btnAgregar_Click_1(object sender, EventArgs e)
         {
-            frmAgregarEntrada agregarEntrada = new frmAgregarEntrada();
+            frmAgregarComprobante agregarEntrada = new frmAgregarComprobante();
             agregarEntrada.Show();
             this.Close();
         }

@@ -608,24 +608,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\usuario\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ger4r\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\Desktop\\Cine-Programacion\\CineFront\\CineFront.csproj",
+      "projectUniqueName": "C:\\Users\\ger4r\\Desktop\\TPIprogramacion\\CineFront\\CineFront.csproj",
       "projectName": "CineFront",
-      "projectPath": "C:\\Users\\usuario\\Desktop\\Cine-Programacion\\CineFront\\CineFront.csproj",
-      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\Desktop\\Cine-Programacion\\CineFront\\obj\\",
+      "projectPath": "C:\\Users\\ger4r\\Desktop\\TPIprogramacion\\CineFront\\CineFront.csproj",
+      "packagesPath": "C:\\Users\\ger4r\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ger4r\\Desktop\\TPIprogramacion\\CineFront\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ger4r\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -639,8 +634,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\usuario\\Desktop\\Cine-Programacion\\CineBack\\CineBack.csproj": {
-              "projectPath": "C:\\Users\\usuario\\Desktop\\Cine-Programacion\\CineBack\\CineBack.csproj"
+            "C:\\Users\\ger4r\\Desktop\\TPIprogramacion\\CineBack\\CineBack.csproj": {
+              "projectPath": "C:\\Users\\ger4r\\Desktop\\TPIprogramacion\\CineBack\\CineBack.csproj"
             }
           }
         }
@@ -679,7 +674,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

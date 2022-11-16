@@ -70,3 +70,15 @@ C:\Users\usuario\Desktop\Cine-Programacion\CineBack\obj\Debug\net5.0\CineBack.dl
 C:\Users\usuario\Desktop\Cine-Programacion\CineBack\obj\Debug\net5.0\refint\CineBack.dll
 C:\Users\usuario\Desktop\Cine-Programacion\CineBack\obj\Debug\net5.0\CineBack.pdb
 C:\Users\usuario\Desktop\Cine-Programacion\CineBack\obj\Debug\net5.0\ref\CineBack.dll
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\bin\Debug\net5.0\CineBack.deps.json
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\bin\Debug\net5.0\CineBack.dll
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\bin\Debug\net5.0\CineBack.pdb
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\CineBack.csproj.AssemblyReference.cache
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\CineBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfoInputs.cache
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\CineBack.AssemblyInfo.cs
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\CineBack.csproj.CoreCompileInputs.cache
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\CineBack.dll
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\refint\CineBack.dll
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\CineBack.pdb
+C:\Users\ger4r\Desktop\TPIprogramacion\CineBack\obj\Debug\net5.0\ref\CineBack.dll

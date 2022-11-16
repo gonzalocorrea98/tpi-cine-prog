@@ -11,16 +11,17 @@ using System.Windows.Forms;
 
 namespace CineFront
 {
-    public partial class frmAgregarEntrada : Form
+    public partial class frmAgregarComprobante : Form
     {
-        public frmAgregarEntrada()
+        public frmAgregarComprobante()
         {
             InitializeComponent();
         }
 
         private void frmAgregarEntrada_Load(object sender, EventArgs e)
         {
-
+            txtFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            txtPrecio.Text = 200.ToString();
         }
 
         //************************************* METODOS *************************************
@@ -78,6 +79,16 @@ namespace CineFront
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >=58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Sólo Números.", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                e.Handled = true;
+                return; 
+            }
         }
     }
 }
